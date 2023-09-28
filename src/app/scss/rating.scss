@@ -1,0 +1,81 @@
+.rating {
+    position: relative;
+    width: 180px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #b3acac;
+ }
+ 
+ .rating__result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-10px) translateX(-5px);
+    z-index: -9;
+    font: 3em Arial, Helvetica, sans-serif;
+    color: #ebebeb8e;
+    pointer-events: none;
+ }
+ 
+ .rating__star {
+    font-size: 2em;
+    cursor: pointer;
+    color: #f8d406b2;
+    transition: filter linear .3s;
+ }
+ 
+ .rating__star:hover {
+    filter: drop-shadow(1px 1px 4px gold);
+ }
+
+
+ .file-input {
+   display: inline-block;
+   padding: 15px;
+   background-color: #ffffff;
+   border: 2px dashed #aaa;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: border-color 0.3s ease;
+ }
+ 
+ .file-input label {
+   display: block;
+   text-align: center;
+   font-size: 16px;
+   color: #333;
+   margin-bottom: 10px;
+ }
+ 
+//  .file-input input[type="file"] {
+//    display: none;
+//  }
+ 
+ .file-input:hover {
+   border-color: #66c3ff;
+ }
+ 
+ .file-input input[type="file"]:focus + label {
+   border-color: #66c3ff;
+   outline: none;
+ }
+ 
+ .custom-label {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #3498db;
+   color: #ffffff;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .custom-label:hover {
+   background-color: #2980b9;
+ }
